@@ -10,13 +10,3 @@
        args:
          executable: /bin/bash
        ignore_errors: true
-
-     - name: "Instalacija ruby 3.0.0 za asdf"
-       shell: "source /home/httpd/.asdf/asdf.sh && asdf install ruby 3.0.0"
-       args:
-         executable: /bin/bash
-
-     - name: "Podesavanje default ruby verzije na 3.0.0"
-       shell: "source /home/httpd/.asdf/asdf.sh && asdf global ruby 3.0.0"
-       args:
-         executable: /bin/bash
