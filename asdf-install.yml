@@ -1,7 +1,7 @@
 -  hosts: all
    tasks:
      - name: "instalacija asdf"
-       shell: "if test -d /home/httpd/.ansible; then echo 'vec instalirano'; else git clone https://github.com/asdf-vm/asdf.git /home/httpd/.asdf --branch v0.11.0 ; fi"
+       shell: "if test -d /home/httpd/.asdf; then echo 'vec instalirano'; else git clone https://github.com/asdf-vm/asdf.git /home/httpd/.asdf --branch v0.11.0 ; fi"
        args:
          executable: /bin/bash
 
